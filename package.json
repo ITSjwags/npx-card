@@ -1,6 +1,6 @@
 {
   "name": "itsjwags",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A personal card for Jonathan Wagoner (@itsjwags)",
   "main": "/bin/card.js",
   "bin": {
