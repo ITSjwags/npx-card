@@ -1,4 +1,4 @@
-It's me, ITSjwags!
+NPX card for me, ITSjwags!
 
 # Usage
 Via npx:

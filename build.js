@@ -17,7 +17,7 @@ const options = {
 const data = {
   name: chalk.white('            Jonathan Wagoner'),
   handle: chalk.white('itsjwags'),
-  work: chalk.cyan('Senior UI Developer at Happy Money'),
+  work: chalk.cyan('Senior UI Engineer at Happy Money'),
   twitter: chalk.dim.white('https://twitter.com/') + chalk.blue('itsjwags'),
   npm: chalk.dim.white('https://npmjs.com/') + chalk.blue('~itsjwags'),
   github: chalk.dim.white('https://github.com/') + chalk.blue('itsjwags'),
