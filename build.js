@@ -1,10 +1,11 @@
 'use strict'
 
 // Pull in our modules
-const chalk = require('chalk')
-const boxen = require('boxen')
-const fs = require('fs')
-const path = require('path')
+import chalk from 'chalk'
+import boxen from 'boxen'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
 // Define options for Boxen
 const options = {
@@ -17,7 +18,7 @@ const options = {
 const data = {
   name: chalk.white('            Jonathan Wagoner'),
   handle: chalk.white('itsjwags'),
-  work: chalk.cyan('Senior UI Engineer at Happy Money'),
+  work: chalk.cyan('Senior Frontend Engineer at Sure'),
   twitter: chalk.dim.white('https://twitter.com/') + chalk.blue('itsjwags'),
   npm: chalk.dim.white('https://npmjs.com/') + chalk.blue('~itsjwags'),
   github: chalk.dim.white('https://github.com/') + chalk.blue('itsjwags'),
@@ -54,5 +55,8 @@ const output = heading + // data.name + data.handle
                linkedining + newline + // data.labelLinkedIn + data.linkedin
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.cyan(boxen(output, options)))
